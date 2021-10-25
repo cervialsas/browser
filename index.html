@@ -33,7 +33,12 @@
        alert('unknown');
     }
     }
-        
+        document.addEventListener("DOMContentLoaded", function(event) {
+            //código a ejecutar cuando el DOM está listo para recibir acciones
+            if(navigator.userAgent.indexOf("Chrome") == -1 && navigator.userAgent.indexOf("Firefox") == -1){
+                alert('Navegador no compatible, te recomendamos usar Chrome o Firefox');
+            }
+        });
   
     </script>
 
